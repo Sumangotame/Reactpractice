@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import 'bootstrap/dist/css/bootstrap.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Layout from './components/layouts/Layout.jsx'
@@ -12,7 +11,6 @@ import '@fontsource/roboto/400.css';
 import { Store } from './components/redux/Store.js'
 import { Provider } from 'react-redux'
 import AddTodo from './components/AddTodo.jsx'
-
 
 
 
