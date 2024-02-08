@@ -26,7 +26,7 @@ function Todos() {
             <div className="mx-5">
                 todos
             </div>
-            <div className="mx-5 flex flex-col justify-center text-pretty fex-wrap list-none w-45"> {newTodo.map((todo) => (
+            <div className="mx-5 flex flex-col justify-center text-pretty fex-wrap list-none w-45 mb-5"> {newTodo.map((todo) => (
                 <li key={todo.id}>
                     {
                         updateId === todo.id ? (<><input type="text" value={updateText} onChange={(e) => setUpdateText(e.target.value)} className='form-control mx-3' /><button className=" btn btn-success btn-sm mx-3" onClick={() => handleUpdate(todo.id)}>save</button></>)

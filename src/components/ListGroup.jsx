@@ -13,14 +13,14 @@ function ListGroup() {
 
   return (
     <>
-      <h1>{heading}</h1>
-      <ul className="list-group">
+      <h1 className="mx-5 mt-5">{heading}</h1>
+      <ul className="list-group mx-5 mb-5">
         {cities.map((city, index) => (
           <li
             className={
               selectedItem === index
-                ? "list-group-item active"
-                : "list-group-item"
+                ? "list-group-item active px-3"
+                : "list-group-item px-3"
             }
             key={city}
             onClick={() => {
