@@ -26,7 +26,7 @@ const Form = () => {
                     <form className="formexp">
                         {action === 'Login' ? (<><input type="text" name="email" id="email" className="form-control" autoFocus onChange={(e) => setEmail(e.target.value)} value={email} placeholder="Email" /><br />
                             <input type="password" name="password" id="password" className="form-control" onChange={(e) => { setPassword(e.target.value) }} value={password} placeholder="Password" /><br /><div className="forgot-password">
-                                <p>Forgot Password? <span className="cursor-pointer text-blue-600">Click Here!</span></p>
+                                <p>Forgot Password? <span className="cursor-pointer text-purple-700">Click Here!</span></p>
                             </div></>) : (<> <input type="text" name="user" id="user" className="form-control" autoFocus onChange={(e) => setUser(e.target.value)} value={user} placeholder="User Name" /><br /><input type="text" name="email" id="email" className="form-control" onChange={(e) => setEmail(e.target.value)} value={email} placeholder="Email" /><br />
                                 <input type="password" name="password" id="password" className="form-control" onChange={(e) => { setPassword(e.target.value) }} value={password} placeholder="Password" /><br /><input type="password" name="confirm-password" id="confirm-password" className="form-control" onChange={(e) => { setConfirmPassword(e.target.value) }} value={confirmPassword} placeholder="Confirm Password" /><br />
                             </>)}
