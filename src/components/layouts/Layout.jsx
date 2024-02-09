@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import Header from '../Header'
 import axios from 'axios'
 import { Outlet, useLocation } from 'react-router-dom'
-import Footer from '../Footer'
 import './Layout.css'
 
 function Layout() {
@@ -13,7 +12,7 @@ function Layout() {
         // // }
         // )
         return (
-                <><div className="p-10 w-screen h-screen bg-pink-500 text-white">
+                <><div className="p-3 w-screen h-screen bg-pink-500 text-white">
                         <Header />
                         {location.pathname === "/" && (<div>
                                 <h1>Welcome to the Homepage</h1>
@@ -21,7 +20,6 @@ function Layout() {
                         </div>)
                         }
                         <Outlet />
-                        <Footer />
                 </div>
                 </>)
 }
