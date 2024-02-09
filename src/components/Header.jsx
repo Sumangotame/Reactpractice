@@ -10,11 +10,10 @@ function Header() {
     }
 
     return (
-        <><div>
-            <Link to="root" className={`link no-underline text-black   mx-3 px-10 btn   ${activeLink === 'root' ? 'bg-purple-500 hover:bg-purple-500 text-white' : 'bg-white-500'}`} onClick={() => handleClick('root')}>form</Link >
-            <Link to="home" className={`link  mx-3 px-10 no-underline text-black btn ${activeLink === "home" ? 'bg-purple-500 hover:bg-purple-500 text-white' : 'bg-white-500'}`} onClick={() => handleClick('home')}>List</Link>
-            <Link to="todo" className={`link mx-3 px-10 no-underline text-black btn   ${activeLink === 'todo' ? 'bg-purple-500 hover:bg-purple-500 text-white' : 'bg-white-500'}`} onClick={() => handleClick('todo')}>todo</Link>
-            <Link to="articles" className={`link   mx-3 px-10 no-underline text-black btn ${activeLink === 'articles' ? 'bg-purple-500 hover:bg-purple-500 text-white' : 'bg-white-500'}`} onClick={() => handleClick('articles')}>article</Link>
+        <><div className=' rounded'>
+            <Link to="root" className={`link no-underline  mx-3 px-10 btn   ${activeLink === 'root' ? 'bg-purple-500 hover:bg-purple-500 text-black' : 'bg-pink-500'}`} onClick={() => handleClick('root')}>form</Link >
+            <Link to="home" className={`link  mx-3 px-10 no-underline  btn ${activeLink === "home" ? 'bg-purple-500 hover:bg-purple-500 text-black' : 'bg-pink-500'}`} onClick={() => handleClick('home')}>List</Link>
+            <Link to="todo" className={`link mx-3 px-10 no-underline btn   ${activeLink === 'todo' ? 'bg-purple-500 hover:bg-purple-500 text-black' : 'bg-pink-500'}`} onClick={() => handleClick('todo')}>todo</Link>
         </div>
         </>
     )

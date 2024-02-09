@@ -13,7 +13,7 @@ function Layout() {
         // // }
         // )
         return (
-                <><div className="mx-24 p-10 w-auto bg-pink-500">
+                <><div className="p-10 w-screen h-screen bg-pink-500 text-white">
                         <Header />
                         {location.pathname === "/" && (<div>
                                 <h1>Welcome to the Homepage</h1>

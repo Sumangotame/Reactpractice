@@ -28,10 +28,7 @@ const router = createBrowserRouter([{
   {
     path: "todo",
     element: <AddTodo />
-  }, {
-    path: "articles",
-    element: <Articles />
-  }]
+  },]
 }])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
