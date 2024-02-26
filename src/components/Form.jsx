@@ -29,7 +29,7 @@ const Form = () => {
         <>
             {/* <div className=" "> */}
             <div className="mx-2">
-                <div className=" p-5 bg-white mt-3 shadow-2xl shadow-blue-500 max-w-screen-lg">
+                <div className=" p-5 bg-white mt-3 shadow-2xlmax-w-screen-lg">
                     {/* <p>{userName}</p> */}
                     <h1 className="text-black mb-4">{action}</h1>
                     {action === 'Login' ? (<><input type="text" name="email" id="email" className="form-control border-gray-500" autoFocus onChange={(e) => setEmail(e.target.value)} value={email} placeholder="Email" /><br />
@@ -38,7 +38,7 @@ const Form = () => {
                         <button type="button" className="btn btn-primary w-32 mb-2" id="buttonid" onClick={submitHandler}>Login</button>
                         <div className=" text-black" >Dont have account? <span className="text-purple-900 cursor-pointer" onClick={handleClick}>Click Here!</span></div>
 
-                    </>) : (<> <input type="text" name="user" id="user" className="form-control" autoFocus onChange={(e) => setUser(e.target.value)} value={user} placeholder="User Name" /><br /><input type="text" name="email" id="email" className="form-control border-gray-500" onChange={(e) => setEmail(e.target.value)} value={email} placeholder="Email" /><br />
+                    </>) : (<> <input type="text" name="user" id="user" className="form-control border-gray-500" autoFocus onChange={(e) => setUser(e.target.value)} value={user} placeholder="User Name" /><br /><input type="text" name="email" id="email" className="form-control border-gray-500" onChange={(e) => setEmail(e.target.value)} value={email} placeholder="Email" /><br />
                         <input type="password" name="password" id="password" className="form-control border-gray-500" onChange={(e) => { setPassword(e.target.value) }} value={password} placeholder="Password" /><br /><input type="password" name="confirm-password" id="confirm-password" className="form-control border-gray-500" onChange={(e) => { setConfirmPassword(e.target.value) }} value={confirmPassword} placeholder="Confirm Password" /><br />
                         <div>
                             <button type="button" className="btn btn-primary w-32 mb-2" id="buttonid" onClick={submitHandler}>SignUp</button>
