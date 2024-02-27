@@ -23,11 +23,11 @@ function AddTodo() {
         <>
             <form onSubmit={addTodoHandler} className="p-3">
                 <input type="text"
-                    className=" bg-white rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-black py-1 px-3 leading-8 transition-colors duration-200 ease-in-out w-"
+                    className=" bg-white rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-black py-1 p-2 leading-8 transition-colors duration-200 ease-in-out w-"
                     placeholder="enter todo..."
                     value={input}
                     onChange={(e) => setInput(e.target.value)} />
-                <button className="btn btn-md btn-primary mx-3 px-10">submit</button>
+                <button className="btn btn-md btn-primary p-2">submit</button>
             </form>
             <Todos />
 

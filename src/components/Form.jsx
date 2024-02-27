@@ -29,12 +29,11 @@ const Form = () => {
         <>
             {/* <div className=" "> */}
             <div className="mx-2">
-                <div className=" p-5 bg-white mt-3 shadow-2xlmax-w-screen-lg">
+                <div className=" p-5 bg-white mt-3 shadow-2xl max-w-screen-sm">
                     {/* <p>{userName}</p> */}
                     <h1 className="text-black mb-4">{action}</h1>
                     {action === 'Login' ? (<><input type="text" name="email" id="email" className="form-control border-gray-500" autoFocus onChange={(e) => setEmail(e.target.value)} value={email} placeholder="Email" /><br />
                         <input type="password" name="password" id="password" className="form-control border-gray-500" onChange={(e) => { setPassword(e.target.value) }} value={password} placeholder="Password" /><br />
-
                         <button type="button" className="btn btn-primary w-32 mb-2" id="buttonid" onClick={submitHandler}>Login</button>
                         <div className=" text-black" >Dont have account? <span className="text-purple-900 cursor-pointer" onClick={handleClick}>Click Here!</span></div>
 

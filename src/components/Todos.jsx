@@ -26,14 +26,15 @@ function Todos() {
             <div className='p-2'>
                 <h2>TO-DO'S</h2>
                 <div className="flex flex-col justify-center text-pretty flex-wrap list-none max-w-xl"> {newTodo.map((todo) => (
-                    <li key={todo.id}>
+                    <li className="border-solid border-black my-2 p-3 flex justify-center items-center bg-green-700 text-5xl font-bold" key={todo.id}>
                         {
                             updateId === todo.id ? (<><input type="text" value={updateText} onChange={(e) => setUpdateText(e.target.value)} className='form-control mb-3 mt-3' /><button className=" btn btn-success btn-sm" onClick={() => handleUpdate(todo.id)}>save</button></>)
                                 :
-                                (<> <span className=" text-xl">{todo.text}</span>
+                                (<> <span className=" text-xl flex-1">{todo.text}</span>
                                     <span className=" float-right">
-                                        <button onClick={() => dispatch(removeTodo(todo.id))} className="btn btn-danger btn-sm px-2  mb-2">delete</button>
-                                        <button onClick={() => setUpdateId(todo.id)} className="btn btn-warning btn-sm mx-2 px-2 mb-2">update</button></span></>)}
+                                        <button onClick={() => dispatch(removeTodo(todo.id))} className="btn btn-danger btn-md px-2  mb-2">delete</button>
+                                        <button onClick={() => setUpdateId(todo.id)} className="btn btn-warning btn-md mx-2 px-2 mb-2 text-slate-950">update</button>
+                                    </span></>)}
                     </li >
 
                 ))
