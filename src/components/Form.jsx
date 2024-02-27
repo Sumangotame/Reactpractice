@@ -28,7 +28,7 @@ const Form = () => {
     return (
         <>
             {/* <div className=" "> */}
-            <div className="mx-2">
+            <div className="mx-3">
                 <div className=" p-5 bg-white mt-3 shadow-2xl max-w-screen-sm">
                     {/* <p>{userName}</p> */}
                     <h1 className="text-black mb-4">{action}</h1>
